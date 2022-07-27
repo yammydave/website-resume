@@ -146,10 +146,10 @@ p span{
     }
     #header .nav-list ul li:hover a{
         color:crimson;
-    }/* currently bugged in mobile mode.
+    }/*
     #header .nav-list ul li:hover a::after{
         transform: translate(-70%, -50%) scale(.4);
-        letter-spacing: initial;
+        letter-spacing:unset;
         color:crimson;
     }*/
     #header .hamburger{
