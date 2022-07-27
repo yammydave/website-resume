@@ -604,9 +604,15 @@ p span{
 #footer .social-item:hover img {
     filter: grayscale(0);
 }
-#footer p{
+#footer .yellow-validator{
     display:flex;
-    color: white;
+    justify-content: center;
+    font-size: 1.3rem;
+    margin: 10px 20px;
+    line-height: 1.8rem;
+}
+#footer .blue-validator{
+    display:flex;
     justify-content: center;
     font-size: 1.3rem;
     margin: 10px 20px;
