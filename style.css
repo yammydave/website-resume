@@ -91,8 +91,6 @@ p span{
     }
     #header .header{
         min-height: 8vh;
-        background-color: rgba(31, 30, 30, 0.24);
-        transition: .3s ease background-color;
     }
     #header .nav-bar{
         display:flex;
@@ -241,7 +239,7 @@ p span{
     font-size: 4rem;
     position: relative;
     color:transparent;
-    animation: text_reveal .5s ease forwards;
+    animation: text_reveal 1.5s ease forwards;
     animation-delay: 1.5s;
 }
 #hero h1:nth-child(1){
@@ -251,8 +249,11 @@ p span{
     animation-delay: 2s;
 }
 #hero h1:nth-child(3){
-    animation: text_reveal_name .5s ease forwards;
     animation-delay: 3s;
+}
+#hero h1:nth-child(4){
+    animation: text_reveal_name .5s ease forwards;
+    animation-delay: 4s;
 }
 #hero h1 span{
     position: absolute;
@@ -272,6 +273,9 @@ p span{
 }
 #hero h1:nth-child(3) span{
     animation-delay: 2.5s;
+}
+#hero h1:nth-child(4) span{
+    animation-delay: 3.5s;
 }
 /*End of Hero section */
 
@@ -393,14 +397,21 @@ p span{
 #projects .project-info p {
 	color: white;
 }
+#projects a:link{
+    flex-basis: 50%;
+	height: 100%;
+    width:100%;
+	display:flex;
+}
 #projects .project-img {
-	flex-basis: 50%;
+    display: flex;
+    height: 100%;
+    width:100%;
 	overflow: hidden;
-	position: relative;
-	background-image: linear-gradient(245deg, #29323c 0%, #485563 100%);
-	opacity: 0.8;    
+	opacity: 0.9; 
     cursor: pointer;
 }
+/*Starting to look too busy and detracting from the wedding image
 #projects .project-img:after {
 	content: '';
 	position: absolute;
@@ -408,21 +419,19 @@ p span{
 	top: 0;
 	height: 100%;
 	width: 100%;
-    object-fit:fill;
+    object-fit:contain;
 }
 #projects .project-img img {
 	transition: 0.3s ease transform;
 }
 #projects .project-item:hover .project-img img {
 	transform: scale(1.1);
-}
-
+}*/
 /*End of Projects Section*/
 
 /*About Section*/
 #about .about{    
     padding: 50px 20px;
-    flex-direction: column-reverse;
     text-align: center;
     max-width: 1200px;
     margin: 0 auto;
@@ -443,12 +452,13 @@ p span{
 #about .col-right p{
     margin-bottom: 20px;
 }
+/*As a junior developer, a resume download seems silly.
 #about .col-right .cta{
     color: black;
     margin-bottom: 50px;
     padding: 10px 20px;
     font-size: 2rem;
-}
+}*/
 #about .col-left .about-img{
     height: 100%;
     width: 100%;
@@ -601,24 +611,20 @@ p span{
     filter: grayscale(1);
     transition: .3s ease filter;
 }
-#footer .social-item:hover img {
-    filter: grayscale(0);
-}
-#footer .yellow-validator{
-    display:flex;
-    justify-content: center;
-    font-size: 1.3rem;
-    margin: 10px 20px;
-    line-height: 1.8rem;
-}
+#footer .yellow-validator,
 #footer .blue-validator{
-    display:flex;
     justify-content: center;
-    font-size: 1.3rem;
-    margin: 10px 20px;
-    line-height: 1.8rem;
+    margin: 10px 10px;
+    filter: grayscale(1);
+    transition: .3s ease filter;
+}
+#footer .social-item:hover img,
+#footer .yellow-validator:hover,
+#footer .blue-validator:hover { 
+    filter: grayscale(0);   
 }
 /*End of Footer Section*/
+
 /* Keyframes */
 @keyframes hamburger_pulse{
     0%{
@@ -651,7 +657,6 @@ p span{
         font-weight:500;
     }
 }
-
 /*End of Keyframes */
 
 /*Media Query For Tablet*/
@@ -695,10 +700,6 @@ p span{
     }
     #projects .all-projects .project-info {
         height: 100%;        
-    }
-    
-    #projects .all-projects .project-img {
-        height:100%;
     }
     /*End of Projects Section*/
 
