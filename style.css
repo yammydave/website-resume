@@ -404,8 +404,8 @@ p span{
 	display:flex;
 }
 #projects .project-img {
-    flex-basis: 50%;
-	display: flex;
+    flex-basis:50%;
+    display: flex;
     height: 100%;
     width:100%;
 	overflow: hidden;
@@ -453,13 +453,12 @@ p span{
 #about .col-right p{
     margin-bottom: 20px;
 }
-/*As a junior developer, a resume download seems silly.
 #about .col-right .cta{
     color: black;
     margin-bottom: 50px;
     padding: 10px 20px;
     font-size: 2rem;
-}*/
+}
 #about .col-left .about-img{
     height: 100%;
     width: 100%;
@@ -802,7 +801,20 @@ p span{
         font-size:2.5rem;
     }
     /*End of Hire Section*/
+    /*Degree Section*/
+    #degree .shu {        
+        background-color:antiquewhite;
+    }
+    #degree .award{
+        width: 40%;
+        margin: 0 auto;
+        padding: 30px 0px 30px 0px;
+        display: block;
+        align-items: center;
+    }
     
+    /*End of Degree Section*/
+
     
 /*End of Media Query for Tablet*/
 
