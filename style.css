@@ -593,28 +593,14 @@ p span{
 #degree .shu {        
     background-color:antiquewhite;
 }
-#degree .award{
-    width: 70%;
+#degree .img{
+    width: 50%;
+    max-width: 600px;
     margin: 0 auto;
     padding: 15px 0px 0px 0px;
-    display: block;
+    display: flex;
     align-items: center;
     position: relative;
-}
-#degree .award:after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-    object-fit:contain;
-}
-#degree .award-img img {
-	transition: 0.3s ease transform;
-}
-#degree .award-item:hover .award-img img {
-	transform: scale(1.1);
 }
 /*End of Degree Section*/
 
