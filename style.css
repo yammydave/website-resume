@@ -404,7 +404,16 @@ p span{
 	display:flex;
 }
 #projects .project-img {
-    flex-basis:50%;
+    display: flex;
+    height: 100%;
+    width:100%;
+	overflow: hidden;
+	opacity: 0.9; 
+    cursor: pointer;
+}
+/*below is a temporary style until the anchor is produced, in order to keep the row-reverse equal, producing a checker pattern*/
+#projects .project-img-temp {
+    flex-basis: 50%;
     display: flex;
     height: 100%;
     width:100%;
