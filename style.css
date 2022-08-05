@@ -580,16 +580,33 @@ p span{
 }
 /*End of Hire Me Section*/
     /*Degree Section*/
-    #degree .shu {        
-        background-color:antiquewhite;
-    }
-    #degree .award{
-        width: 90%;
-        margin: 0 auto;
-        padding: 15px 0px 0px 0px;
-        display: block;
-        align-items: center;
-    }
+
+#degree .shu {        
+    background-color:antiquewhite;
+}
+#degree .award{
+    width: 70%;
+    margin: 0 auto;
+    padding: 15px 0px 0px 0px;
+    display: block;
+    align-items: center;
+    position: relative;
+}
+#degree .award:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+    object-fit:contain;
+}
+#degree .award-img img {
+	transition: 0.3s ease transform;
+}
+#degree .award-item:hover .award-img img {
+	transform: scale(1.1);
+}
 /*End of Degree Section*/
 
 /*Footer Section*/
@@ -818,7 +835,7 @@ p span{
     
 /*End of Media Query for Tablet*/
 
-    /*Media Query for Desktop*/
+/*Media Query for Desktop*/
     @media only screen and (min-width: 1200px){
     #header .hamburger{
         display: none;
