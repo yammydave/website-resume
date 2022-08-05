@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Cookie&display=swap');
+body{
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+}
+h1{
+    font-family: arizonia, sans-serif;
+    font-size:50px;
+    display:flex;
+}
+img{
+    display:flex;
+    position: absolute;
+    width:110%;
+    height: 75%;
+    object-fit: cover;
+    top: 10%;
+    padding: 0% 5% 0% 5%;
+    z-index: 100;
+}
+h2{
+    font-family:cookie, sans-serif;
+    font-size: 40px;
+    color: black;
+}
+.title{    
+    position: absolute;
+    top: 85%;
+    left: 15%;
+}
+.sub-title{    
+    position: absolute;
+    top: 0%;
+    left: 10%;
+}
+.sub-title, .title{
+    display:flex;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+}
